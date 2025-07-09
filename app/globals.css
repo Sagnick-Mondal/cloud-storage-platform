@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-white text-dark-200 min-h-screen;
+    @apply text-white bg-gradient-to-br from-violet-700 via-purple-800 to-gray-900 text-white min-h-screen;
   }
 
   /* Remove scrollbar */
@@ -134,7 +134,7 @@
     @apply mx-auto max-w-7xl px-5;
   }
   .primary-btn {
-    @apply bg-brand hover:bg-brand-100 transition-all rounded-full button !important;
+    @apply bg-purple-600 hover:bg-emerald-500 transition-all rounded-full button duration-500 !important;
   }
   .flex-center {
     @apply flex items-center justify-center;
@@ -145,14 +145,14 @@
     @apply outline-none ring-offset-transparent focus:ring-transparent focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
   }
   .shad-input {
-    @apply border-none shadow-none p-0 shad-no-focus placeholder:text-light-200 body-2 !important;
+    @apply  border-none shadow-none pl-4 shad-no-focus placeholder:text-light-200 body-2 placeholder-gray-500 !important;
   }
 
   .shad-form-item {
-    @apply flex h-[78px] flex-col justify-center rounded-xl border border-light-300 px-4 shadow-drop-1;
+    @apply flex h-[78px] flex-col justify-center rounded-full border border-light-300 px-4 shadow-drop-1;
   }
   .shad-form-label {
-    @apply text-light-100 pt-2 body-2 w-full !important;
+    @apply text-white pl-4 pt-2 body-2 w-full !important;
   }
   .shad-form-message {
     @apply text-red body-2 ml-4 !important;
@@ -300,7 +300,7 @@
     @apply flex max-h-[800px] w-full max-w-[580px] flex-col justify-center space-y-6 transition-all lg:h-full lg:space-y-8 !important;
   }
   .form-title {
-    @apply h1 text-center text-light-100 md:text-left !important;
+    @apply h1 text-center text-white md:text-left !important;
   }
   .form-submit-button {
     @apply primary-btn h-[66px] !important;
