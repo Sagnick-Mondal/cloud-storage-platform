@@ -60,7 +60,7 @@ const OtpModal = ({
     <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
       <AlertDialogContent className="shad-alert-dialog">
         <AlertDialogHeader className="relative flex justify-center">
-          <AlertDialogTitle className="h2 text-center">
+          <AlertDialogTitle className="h2 text-center text-white">
             Enter Your OTP
             <Image
               src="/assets/icons/close-dark.svg"
@@ -71,9 +71,9 @@ const OtpModal = ({
               className="otp-close-button"
             />
           </AlertDialogTitle>
-          <AlertDialogDescription className="subtitle-2 text-center text-light-100">
+          <AlertDialogDescription className="subtitle-2 text-center text-white">
             We&apos;ve sent a code to{" "}
-            <span className="pl-1 text-brand">{email}</span>
+            <span className="pl-1 bg-gradient-to-r from-cyan-500 to-yellow-400 bg-clip-text text-transparent">{email}</span>
           </AlertDialogDescription>
         </AlertDialogHeader>
 
@@ -107,12 +107,12 @@ const OtpModal = ({
               )}
             </AlertDialogAction>
 
-            <div className="subtitle-2 mt-2 text-center text-light-100">
+            <div className="subtitle-2 mt-2 text-center text-white">
               Didn&apos;t get a code?
               <Button
                 type="button"
                 variant="link"
-                className="pl-1 text-brand"
+                className="pl-1 bg-gradient-to-r from-cyan-500 to-yellow-400 bg-clip-text text-transparent hover:text-brand transition-all duration-500 hover:no-underline"
                 onClick={handleResendOtp}
               >
                 Click to resend
